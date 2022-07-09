@@ -1,0 +1,202 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- one
+- two
+- three
+- ongc
+- ovl
+- history
+- vision
+- subsidiary
+- jointventure
+- directors
+- ovldirectors
+- ovlassets
+- streams
+- pay
+- csrvision
+- csrobjective
+- committee
+- inform
+- searchurl
+- out_of_scope
+- thankyou
+- bye
+entities:
+- e_id
+- url
+- eid
+slots:
+  e_id:
+    type: text
+  url:
+    type: text
+responses:
+  utter_greet_ongc:
+  - text: "Hii, I am ongc chatbot designed using rasa framework.\ntype 'aa' or 'AA'\
+      \ for FAQ\ntype 'bb' or 'BB'  for Employee related information\ntype 'cc' or\
+      \ 'CC' for important link of subsidiaries and project etc\"\n"
+  utter_welcome_1:
+  - text: Welcome to the FAQ part of this chatbot here you can ask about basic information
+      about ONGC and OVL like history,vision,subsidiary etc
+  utter_welcome_2:
+  - text: Welcome to the this part of chatbot in this part you can know about the
+      employee detail just by entering the employee id. We need employee id to fetch
+      the detail of employee, can you provide employee id please?
+  utter_welcome_3:
+  - text: "Welcome to the third part of this chatbot here you can get the important\
+      \ url and web link for ongc\nTo provide the url . I need the name. Can you please\
+      \ provide me the name?\n"
+  utter_history:
+  - text: ONGC was set up under the visionary leadership of Pt. Jawahar Lal Nehru.
+      he reposed faith in Sr. Keshav Dev Malviya who laid the foundation of ONGC in
+      the form of Oil and Gas division,under Geological survey of India in 1955.After
+      few months it was converted into Oil and Natural Gas Directorate. the Directorate
+      was converted into Commission and chirestend Oil and natural gas Commission
+      on 14th August 1956.In 1994, Oil and Natural Gas Commission was converted int
+      a Coporation, and in 1997 it was recognized as one of the Navratna by the Government
+      of India.and in 2010 it has been conferred with Maharatna status.
+  utter_vision:
+  - text: VISION of ONGC is - to be global leader in integrated business through sustainable
+      growth, knowledge, excellence and exemplary gorvernance practices. and till
+      2030 paperless office..............MISSION of ONGC is - Dedicated to excellence
+      by leveraging competitive advantages in R&D and technology with involved people.
+  utter_ongc:
+  - text: "ONGC is Oil and Natural Gas Corporation is an Indian Multinational Crude\
+      \ Oil and Gas Corporation. Its registered office is at New Delhi, India.\nIt\
+      \ is a state-owned enterprise of the Government of India, under the administrative\
+      \ control of the Ministry of Petroleum and Natural Gas.\nurl of ONGC is : https://www.ongcindia.com/\n"
+  utter_ovl:
+  - text: "OVL is ONGC Videsh Limited (OVL) is the international arm of ONGC. It was\
+      \ rechristened on 15 June 1989. The primary business of ONGC Videsh is to\n\
+      prospect for oil and gas acreages outside India, including exploration, development\
+      \ and production of oil and gas. It currently has 39 projects\nacross 19 countries.\n\
+      url of OVL is : https://www.ongcvidesh.com/\n"
+  utter_subsidiary:
+  - text: "Subsidiaries of ONGC are as follow:\n- OVL : ONGC Videsh Limited\n- MRPL\
+      \ : Mangalore Refinery and Petrochemicals Limited\n- HPCL : Hindustan Petroleum\
+      \ Corporation limited\n- PMHBL: Petronet MHB Ltd\n"
+  utter_jointventure:
+  - text: "joint ventures of ONGC are as follow:\n- OTPC : ONGC Tripura Power company\
+      \ Limited\n- OPAL : ONGC Petro-additions Limited\n- MSEZ : Mangalore Special\
+      \ Economic Zone Limited\n- OMPL : ONGC Mangalore Petrochemicals Limited\n- DSL\
+      \  : Dahej SEZ Limited\n- OTBL : ONGC TERI(The Energy and Resource Institute)\
+      \ Biotech Limited\n"
+  utter_directors:
+  - text: "The Company is managed by the Board of Directors, which formulates strategies,\
+      \ policies and reviews its performance periodically. The Chairman & Managing\
+      \ Director (CMD) and Six Whole-Time Directors viz. Director (Onshore), Director\
+      \ (Technology & Field Services), Director (Finance), Director (Offshore), Director\
+      \ (Exploration) and Director (Human Resource), manage the day-to-day business\
+      \ affairs of the Company under the overall supervision, control and guidance\
+      \ of the Board.\n-CMD and Functional Directors\nChairman & Managing Director-\
+      \ Subhash Kumar\nDirector (Finance)-Rajesh Kakkar\nDirector (Offshore)-Dr. Alka\
+      \ Mittal\nDirector (HR)-Rajesh Kumar Srivastava\nDirector (Exploration)-Om Prakash\
+      \ Singh\nDirector (T&FS)-Anurag Sharma\nDirector (Onshore)\n-Government Nominee\
+      \ Directors\nRajesh Aggarwal-Additional Secretary & Financial Advisor – MoP&NG\n\
+      Amar Nath-Joint Secretary (Exploration) – MoP&NG\n-Independent Directors\nSmt.\
+      \ Ganga Murthy-Former Principal Economic Adviser to the GoI\nAmitava Bhattacharyya-Former\
+      \ Central Information Commissioner\n"
+  utter_ovl_directors:
+  - text: "The Chairman and Managing Director of ONGC, the parent company, is also\
+      \ the Chairman of ONGC Videsh. The ONGC Videsh Board consists of four full time\
+      \ Directors: the Managing Director, who is the Chief Executive Officer of the\
+      \ Company, Director (Finance), Director (Operations) and Director (Exploration).\
+      \ All whole-time Directors of ONGC are special invitees on the Board of ONGC\
+      \ Videsh.\n\nMr. B.N. Reddy, Govt. Nominee Director and Dr. K.V. Pratap, Joint\
+      \ Secretary, Department of Economic Affairs, Ministry of Finance, Government\
+      \ of India are part-time Directors on the ONGC Videsh Board.\n"
+  utter_ovl_assets:
+  - text: "ONGC Videsh has stake in 39 oil and gas projects in 19 Countries, viz.\
+      \ Azerbaijan (2 projects), Bangladesh (2 Projects), Brazil (2 projects), Colombia\
+      \ (7 projects), Iran (1 project), Iraq (1 project), Israel (1 project), Kazakhstan\
+      \ (1 project), Libya (1 project), Mozambique (1 Project), Myanmar (6 projects),\
+      \ Namibia (1 project), New Zealand (1 Project), Russia (3 projects), South Sudan\
+      \ (2 projects), Syria (2 projects), UAE (1 project), Venezuela (2 projects),\
+      \ and Vietnam (2 projects).\n\nONGC Videsh adopts a balanced portfolio approach\
+      \ and maintains a combination of producing, discovered, exploration and pipeline\
+      \ assets. Currently, ONGC Videsh has oil and gas production from 14 Assets,\
+      \ 4 Assets where hydrocarbons have been discovered and are at various stages\
+      \ of development, 18 Assets are under various stages of Exploration and 3 projects\
+      \ are pipeline projects.\n"
+  utter_streams:
+  - text: "Multiple career streams available to you in ONGC are:\n\nBusiness Development\n\
+      Corporate Planning\nCorporate Affairs\nMarketing\nCorporate Communication\n\
+      Corporate Social Responsibility\nMaterials Management\nCivil\nExploration &\
+      \ Production\nFinance\nHuman Resource\nLegal\nOperations & Maintenance\nIT &\
+      \ Information Security\nElectronic & Communication\nPetrochemical\nProjects\n\
+      Onshore/Offshore Engineering Services\nResearch & Development at our 12 world\
+      \ class Institutes\nSecurity\n- How To Apply\nThe candidate has to register\
+      \ online and fill up necessary details against each vacancy notified.\nOnly\
+      \ those candidates who fulfill eligibility criteria of age, qualification and\
+      \ are accompanied with copies and testimonials are accepted.\n"
+  utter_pay:
+  - text: "Grade/Level  Pay Scale\nE-0          50000-160000\nE-0          50000-160000\n\
+      E-1          60000-180000\nE-2          70000-200000\nE-3          80000-220000\n\
+      E-4          90000-240000\nE-5          100000-260000\nE-6          120000-280000\n\
+      E-7          120000-280000\nE-8          120000-280000\nE-9          150000-300000\n\
+      Director     180000-340000\nCMD          200000-370000\n"
+  utter_csrvision:
+  - text: "Vision\nTo support responsible and sustainable initiatives, while taking\
+      \ care of the concern for People, Planet and Profit.\nMission\nContinually enhance\
+      \ the triple bottom line benchmarks of economic, environmental and social performance\
+      \ through committed involvement of the employees.\nTo develop social wealth\
+      \ for the communities we engage with.\nPromote efficient usage of scarce resources,\
+      \ encourage green energy initiatives and develop innovative solutions to fulfil\
+      \ the vision by stepping beyond the mandatory provisions.         \n"
+  utter_csrobjective:
+  - text: "To understand the stakeholder expectations through structured engagement\
+      \ process and communication strategy and leverage this understanding to develop\
+      \ and implement outcome based and impact oriented projects in the select areas.\n\
+      To adopt Environmentally Sustainable business practices in ONGC’s normal operations\
+      \ with a view to gradually reduce our carbon and water footprint, innovative\
+      \ management of waste, prudent energy management and biodiversity conservation.\n\
+      To envision, execute and manage long enduring projects with a wide geographical\
+      \ spread and larger social impact with focus on inclusive growth of marginalized\
+      \ and deprived sections of the society.\nTo create adequately empowered organizational\
+      \ structure and a system of management oversight, review and control.\nTo persuade\
+      \ our business partners for adopting similar practices for CSR and Sustainable\
+      \ development.\n - OTBL : ONGC TERI(The Energy and Resource Institute) Biotech\
+      \ Limited\n"
+  utter_committee:
+  - text: "Audit Committee (AC):  Smt. Ganga Murthy – Independent Director - Chairperson\n\
+      Stakeholders’ Relationship Committee (SRC):  Smt. Ganga Murthy – Independent\
+      \ Director - Chairperson\nNomination & Remuneration Committee (NRC): Smt. Ganga\
+      \ Murthy – Independent Director – Chairperson\nCorporate Social Responsibility\
+      \ Committee(CSRC): Shri Amitava Bhattacharyya – Independent Director - Chairman\n\
+      Risk Management Committee (RMC): Shri Amitava Bhattacharyya – Independent Director\
+      \ – Chairman\n"
+  utter_out_of_scope:
+  - text: "Sorry, we are at the learning stage and do not have the details that you\
+      \ are presently asking. Please, try to reframe your input.         \n"
+  utter_noworries:
+  - text: "My Pleasure.\nIt was not a problem at all. I'm glad I could be of assistance.\n"
+  utter_bye:
+  - text: "It was nice talking to you.\nSee you soon.\nBye.\n"
+actions:
+- action_detail_search
+- action_search_url
+- utter_greet_ongc
+- utter_welcome_1
+- utter_welcome_2
+- utter_welcome_3
+- utter_history
+- utter_vision
+- utter_ongc
+- utter_ovl
+- utter_subsidiary
+- utter_jointventure
+- utter_directors
+- utter_ovl_directors
+- utter_ovl_assets
+- utter_streams
+- utter_pay
+- utter_csrvision
+- utter_csrobjective
+- utter_committee
+- utter_out_of_scope
+- utter_noworries
+- utter_bye
